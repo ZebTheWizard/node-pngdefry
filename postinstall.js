@@ -22,6 +22,6 @@ if (os.type() === 'Linux') {
       throw new Error('install fail');
     }
 
-    cp.exec('mv ' + pngdefryPath + ' ' + linuxPath, {});
+    cp.exec('mv ' + pngdefryPath + ' ' + linuxPath, function () {});
   });
 }
